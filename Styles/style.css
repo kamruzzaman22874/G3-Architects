@@ -145,7 +145,8 @@ ul li a:hover {
 	padding: 20px;
 	margin: 10px;
 }
-.experience button {
+.experience{
+	width: 25%;
 	background: #ff900e;
 	border-radius: 10px;
 	padding: 25px 30px;
@@ -155,13 +156,14 @@ ul li a:hover {
 	line-height: 50px;
     border: none;
     position: relative;
-    left: 35rem;
+    left: 33rem;
     bottom: 11rem;
 }
 .award-wining{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-items: center;
+	margin-bottom: 30px;
 }
 .award-wining-info{
     margin: 20px 50px;
@@ -173,6 +175,42 @@ ul li a:hover {
 }
 .award-wining-info:hover{
     transform: rotate(360deg);
+}
+.unique{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 100%;
+	margin-top: 50px;
+}
+.unique img{
+    width: 20%;
+    height: 200px;
+	border-radius: 10px;
+	transition: 0.7s;
+	overflow: hidden;
+}
+.unique img:hover{
+	transform: scale(1.1);
+	transition: 0.6s;
+}
+.sponsors{
+	margin: 50px 0px;
+}
+.sponsors-info{
+	text-align: center;
+	padding-bottom: 50px;
+}
+.sponsor-logo{
+	display: flex;
+	gap: 50px;
+	filter: grayscale(1);
+}
+.footer{
+	text-align: center;
+	background: #FFF4E7;
+	padding: 20px;
+	margin-bottom: 50px;
 }
 
 @media screen and (max-width: 576px) {
@@ -223,17 +261,18 @@ ul li a:hover {
         height: 100vh;
         margin-bottom: 12rem;
     }
-   .experience button {
-	background: #ff900e;
-	border-radius: 10px;
-	padding: 5px 10px;
-	color: white;
-	font-weight: 700;
-	font-size: 30px;
-    border: none;
-    position: relative;
-    left: 1rem;
+	/* .experience{
+		width:20%;
+	} */
+   .experience {
+	width: 60%;
+	height: 150px;
+    left: 6rem;
     bottom: 12rem;
+}
+.experience button p{
+	position: relative;
+	left: 20px;
 }
 .award-wining{
     grid-template-columns: repeat(1,1fr);
@@ -244,5 +283,18 @@ ul li a:hover {
     background-color: burlywood;
     border-radius: 10px;
     transition: 0.6s;
+}
+.unique{
+	flex-direction: column;
+	width: 100%;
+}
+.unique img{
+    width: 100%;
+	height: 300px;
+}
+.sponsor-logo{
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	gap: 10px;
 }
 }
