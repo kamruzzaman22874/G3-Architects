@@ -183,14 +183,14 @@ ul li a:hover {
     transform: rotate(360deg);
 }
 .unique{
-	display: flex;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
 	gap: 20px;
 	width: 100%;
 	margin-top: 50px;
 }
 .unique img{
-    width: 20%;
+	width: 100%;
     height: 200px;
 	border-radius: 10px;
 	transition: 0.7s;
@@ -258,6 +258,7 @@ ul li a:hover {
 	}
 	.device-info{
 		width: 300px;
+		
 	}
 	.device-info p{
 		width: 270px;
@@ -272,7 +273,7 @@ ul li a:hover {
     }
     .love-enjoy-info{
         height: 100vh;
-        margin-bottom: 7rem;
+        margin-bottom: 14rem;
     }
 	/* .experience{
 		width:20%;
@@ -300,7 +301,7 @@ ul li a:hover {
     transition: 0.6s;
 }
 .unique{
-	flex-direction: column;
+	grid-template-columns: repeat(1,1fr);
 	width: 100%;
 }
 .unique img{
@@ -312,4 +313,59 @@ ul li a:hover {
 	justify-content: space-evenly;
 	gap: 10px;
 }
+}
+
+
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+	nav h2 {
+	font-size: 18px;
+}
+
+.banner-details p{
+	margin-bottom: 4rem;
+}
+.features {
+	flex-direction: column;
+}
+.team-features img{
+	width: 18rem;
+}
+.features-info{
+	width: 100%;
+}
+.love-enjoy{
+	flex-direction: column-reverse;
+}
+.experience{
+	bottom: 39rem;
+	left: 10rem;
+	width: 50%;
+	text-align: center;
+}
+.device-info{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 30px;
+	margin-left: 0;
+}
+.device-info article{
+	width: 280px;
+	padding: 20px;
+}
+.some-facts{
+	margin: 15rem 0px 3rem 0px;
+}
+.award-wining{
+	grid-template-columns: repeat(2,1fr);
+	margin-left: 0;
+}
+.unique{
+	grid-template-columns: repeat(2,1fr);
+}
+.sponsor-logo{
+	width: 700px;
+	flex-wrap: wrap;
+}
+
 }
