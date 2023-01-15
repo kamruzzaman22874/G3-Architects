@@ -1,4 +1,6 @@
-/* Font style  */
+/*---------
+Font style  
+----------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,500&display=swap');
 
 * {
@@ -19,7 +21,9 @@ header {
 	margin: 0 auto;
 }
 
-/* common button  */
+/*-----------
+common button  
+-------------*/
 .btn {
 	display: flex;
 	justify-content: center;
@@ -33,7 +37,9 @@ header {
 	margin-bottom: 50px;
 }
 
-/* navigation bar style */
+/*------------------ 
+navigation bar style 
+-------------------*/
 
 nav {
 	display: flex;
@@ -59,6 +65,11 @@ ul li a {
 ul li a:hover {
 	background-color: burlywood;
 }
+
+/*------------------
+Banner section style  
+--------------------*/
+
 .banner-details h1 {
 	font-weight: 700;
 	font-size: 35px;
@@ -87,6 +98,11 @@ ul li a:hover {
 	width: 100%;
     padding: 30px;
 }
+
+/*--------------------
+Features section style  
+---------------------*/
+
 .features {
 	display: flex;
 	align-items: center;
@@ -109,6 +125,10 @@ ul li a:hover {
 .features-btn {
 	margin-left: 0;
 }
+
+/*------------------------
+Love & enjoy section style
+-------------------------*/
 
 .love-enjoy {
 	display: flex;
@@ -145,6 +165,11 @@ ul li a:hover {
 	padding: 20px;
 	margin: 10px;
 }
+
+/*----------------------
+Experience section style  
+-----------------------*/
+
 .experience{
 	width: 25%;
 	background: #ff900e;
@@ -182,6 +207,12 @@ ul li a:hover {
 .award-wining-info:hover{
     transform: rotate(360deg);
 }
+
+
+/*----------------------
+Unique section style  
+-----------------------*/
+
 .unique{
 	display: grid;
 	grid-template-columns: repeat(4,1fr);
@@ -200,6 +231,12 @@ ul li a:hover {
 	transform: scale(1.1);
 	transition: 0.6s;
 }
+
+
+/*-----------------
+Sponsor Section Style
+-------------------*/
+
 .sponsors{
 	margin: 50px 0px;
 }
@@ -218,6 +255,11 @@ ul li a:hover {
 	padding: 20px;
 	margin-bottom: 50px;
 }
+
+
+/*--------------------------------------------------- 
+Media query use for mobile device (Max-Width : 576px)
+-----------------------------------------------------*/
 
 @media screen and (max-width: 576px) {
     header{
@@ -275,9 +317,6 @@ ul li a:hover {
         height: 100vh;
         margin-bottom: 14rem;
     }
-	/* .experience{
-		width:20%;
-	} */
    .experience {
 	width: 60%;
 	height: 150px;
@@ -317,6 +356,10 @@ ul li a:hover {
 	gap: 10px;
 }
 }
+
+/*--------------------------------------------------------------------------------
+Media query use for Tablet device device ( Min-Width: 577px and Max-Width : 992px)
+---------------------------------------------------------------------------------*/
 
 
 
