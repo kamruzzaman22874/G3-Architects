@@ -85,6 +85,7 @@ ul li a:hover {
 
 .banner img {
 	width: 100%;
+    padding: 30px;
 }
 .features {
 	display: flex;
@@ -157,14 +158,43 @@ ul li a:hover {
     left: 35rem;
     bottom: 11rem;
 }
+.award-wining{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: center;
+}
+.award-wining-info{
+    margin: 20px 50px;
+    background-color: burlywood;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+.award-wining-info:hover{
+    transform: rotate(360deg);
+}
 
 @media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
 	nav h2 {
 		font-size: 16px;
+        text-align: center;
+        padding-bottom: 10px;
 	}
-	nav ul {
-		display: block;
+	nav{
+        display: block;
+        justify-content: center;
+        padding: 10px;
 	}
+    nav ul{
+        display: block;
+        justify-content: center;
+        margin-left: 130px;
+    }
+
 	nav ul li {
 		padding: 10px;
 	}
@@ -172,21 +202,47 @@ ul li a:hover {
 		margin-bottom: 8rem;
 	}
 	.features {
+        display: block;
 		flex-direction: column;
 	}
+    .features-info{
+        width: 100%;
+    }
 	.team-features {
 		grid-template-columns: repeat(1, 1fr);
-		padding: 50px;
+		padding: 20px;
 	}
+    .love-enjoy-info article , p {
+	padding: 20px;
+    width: 400px;
+    }
     .love-enjoy{
         flex-direction: column;
     }
     .love-enjoy-info{
         height: 100vh;
+        margin-bottom: 12rem;
     }
-    .experience button {
+   .experience button {
+	background: #ff900e;
+	border-radius: 10px;
+	padding: 5px 10px;
+	color: white;
+	font-weight: 700;
+	font-size: 30px;
+    border: none;
     position: relative;
+    left: 1rem;
     bottom: 12rem;
-    left: 8rem;
+}
+.award-wining{
+    grid-template-columns: repeat(1,1fr);
+    padding: 2px;
+}
+.award-wining-info{
+    margin: 2px 10px;
+    background-color: burlywood;
+    border-radius: 10px;
+    transition: 0.6s;
 }
 }
